@@ -1,0 +1,61 @@
+@charset 'utf-8';
+
+@font-face {
+    font-family: android;
+    src: url(../font/IDroid.otf);
+}
+
+@font-face {
+    font-family: circuito;
+    src: url(../font/chintzy.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root { 
+
+    --cor1:#127369;
+    --cor2:#10403B;
+    --cor3:#8AA6A3;
+    --cor4:#4C5958;
+    --cor5:#BFBFBF; } 
+
+
+body{
+    background-color:  rgba(0, 0, 0, 0.89);
+    
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    }
+
+
+#titulo{
+    color: #8cc561;
+    font-family: circuito,Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 7em;
+}   
+
+
+main{
+    color: white;
+}  
+
+section{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100px;
+        background-color:var(--cor5) ;
+        border-radius: 5px;
+}
