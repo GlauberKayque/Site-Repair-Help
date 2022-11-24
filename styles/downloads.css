@@ -29,33 +29,119 @@ body{
     
 }
 
-header{
+.navega{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap:2px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom:solid 1px  #8cc561;  }
+
+
+.navega > a {
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding-top: 20px;
-    }
+    align-items: center;   
+    height:60px ;
+    width: 125px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    font-family: android,Helvetica, sans-serif;
+    font-size:15px;
+    background-color:var(--cor5);
+    transition-property: width,background-color;
+    transition-duration: 100ms ,1000ms;
+
+}    
 
 
 #titulo{
     color: #8cc561;
     font-family: circuito,Arial, Helvetica, sans-serif;
     font-weight: 400;
-    font-size: 7em;
-}   
+    font-size:5vmax; }
 
 
-main{
-    color: white;
-}  
+/*div conteiner botões*/
+#select{
+    display:flex;
+    justify-content: center;
+    gap:20px;
+    flex-wrap: wrap;
+    padding-top:50px;}
+
+
+.butt {
+     background-color:var(--cor5);
+     
+     height:30px;
+     width: 150px;
+     border-radius:5px;
+     border: solid 3px #8cc561;
+     font-family: circuito,Arial, Helvetica, sans-serif;
+     font-weight: 400;
+     font-size: 1.5em;
+     transition-property: background-color;
+     transition-duration: 1500ms;
+}
+
+.butt:hover {
+    background-color: #8cc561;
+}
+
+
+/*div conteiner das sections*/
+#download{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap:10px;
+        margin-top: 50px;
+}
 
 section{
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        flex-direction: column;
-        height: 100px;
-        background-color:var(--cor5) ;
-        border-radius: 5px;
+       display: flex;
+       flex-direction: column;
+       gap: 10px;
+       padding-left: 10px;
+       margin: auto;
+       width:50vmax;
+       border-radius: 2px;
+       color: #8cc561;
+       
+      
 }
+
+/*sections*/
+#tutorial{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-family: circuito,Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 2.5vmax;}
+#samsung{display: none;}
+#motorola{display: none;}
+#lg{display: none;}
+#xiaomi{display: none;}
+#iphone{display:none;}
+#outros{display: none;}
+
+
+div > section > a {
+    text-decoration: none;
+    color:white}
+
+    .navega > a:hover {
+        text-decoration: none;
+        background-color:#8cc561;
+        color: black;
+        width:170px;
+   }
+   
+   a:hover{
+     text-decoration: underline;
+     color:red;
+   }

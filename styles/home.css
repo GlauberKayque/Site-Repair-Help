@@ -55,10 +55,11 @@
                flex-wrap: wrap;
                gap: 10px;
                
+               
                }
      
      
-             main >div >  a { 
+             main > nav >  a { 
                     display: flex;
                     flex-direction: column;         
                     justify-content: center;
@@ -98,6 +99,7 @@
            justify-content: flex-end;
            align-content: center;
            align-items: center;
+           border-top: solid 5px #8cc561;
            height: 101px;
            background-color:var(--cor5);
            font-family: android,Arial, Helvetica, sans-serif;
